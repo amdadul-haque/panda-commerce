@@ -3,10 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Panda Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./logo/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+<!-- Carosel  start-->
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col md-7">
+              <h1>Acer VH4709 Headphone</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, nobis.</p>
+              <h2 class="bannner-price">$ 35</h2>
+              <button class="btn buy-btn btn-danger ">BUY NOW <span>&rarr;</span> </button>
+            </div>
+            <div class="col md-5">
+              <img src="./banner-images/headphone.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col md-7">
+              <h1>Samsung UHD TV</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, nobis.</p>
+              <h2 class="bannner-price">$ 150</h2>
+              <button class="btn buy-btn btn-danger">BUY NOW <span>&rarr;</span> </button>
+            </div>
+            <div class="col md-5">
+              <img src="./banner-images/tv.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row align-items-center justify-content-center">
+            <div class="col md-7">
+              <h1>X-Box pro</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, nobis.</p>
+              <h2 class="bannner-price">$ 420</h2>
+              <button class="btn buy-btn btn-danger">BUY NOW <span>&rarr;</span></button>
+            </div>
+            <div class="col md-5">
+              <img src="./banner-images/xbox.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+<!-- Carosel  end-->
+<!-- Catagories  start-->
+<div class="container catagories">
+  <h1>Catagories</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="cat1 d-flex justify-content-between align-items-center">
+        <h1>Watch</h1>
+        <img src="./categories/watch.png" alt="">
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="cat2 d-flex justify-content-between align-items-center">
+        <h1>Bags</h1>
+        <img src="./categories/bag.png " alt="">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="cat3 d-flex justify-content-between align-items-center">
+        <h1>Shoes</h1>
+        <img src="./categories/shoes.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Catagories  end-->
+<!--  Shoes Start-->
+<div class="product-outer">
+  <div class="container shoes-container" id="shoes">
+    <div>
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>Shoes</h1>
+        <h5 ><a href="#">See All</a></h5>
+      </div>
+      <div class="shoes">
+        <div class="shoes-row ">
+          <div class="shoes-col">
+            <div class="shoe1 d-flex flex-column justify-content-center align-items-center">
+              <img src="./shoes/shoe-1.png" alt="" class="card-img-top">
+              <h1>Show</h1>
+              <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, quos.</p>
+              <h1 class="shoe-price">$300</h1>
+              <h2 class="shoe-price"><button class="btn shoe-btn">Buy Now</button></h2>
+            </div>
+          </div>
+
+          <div class="shoes-col">
+            <div class="shoe2 d-flex flex-column justify-content-center align-items-center">
+              <img src="./shoes/shoe-2.png" alt="" class="card-img-top">
+              <h1>Show</h1>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia!</p>
+              <h1 class="shoe-price">$400</h1>
+              <h2 class="shoe-price"><button class="btn shoe-btn">Buy Now</button></h2>
+            </div>
+          </div>
+
+          <div class="shoes-col">
+            <div class="shoe3 d-flex flex-column  align-items-center">
+              <img src="./shoes/shoe-3.png" alt="" class="card-img-top">
+              <h1>Show</h1>
+              <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, eum!</p>
+              <h1 class="shoe-price">$350</h1>
+              <h2 class="shoe-price"><button class="btn shoe-btn">Buy Now</button></h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!--     Shoes End     -->
+<!--     Bags Start     -->
+  <div class="container bags-container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1>Bags</h1>
+      <h5><a href="#">See All</a></h5>
+    </div>
+    <div class="bag-row">
+      <div class="bag-col">
+        <img src="./bags/bag-1.png" alt="" class="card-img">
+        <h2 class="card-title">Hot Red</h2>
+        <p class="text-center">Very hot red back you must have one</p>
+        <h1 class="bag-price">$ 120</h1>
+        <button class="btn btn-dark">Buy Now</button>
+      </div>
+      <div class="bag-col">
+        <img src="./bags/bag-2.png" alt="" class="card-img">
+        <h2 class="card-title">Soothy Blue</h2>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci doloremque natus culpa dignissimos esse perspiciatis quam neque voluptatem, quibusdam officiis quod facilis ut placeat autem explicabo quas, aliquid nobis odio?</p>
+        <h1 class="bag-price">$ 149</h1>
+        <button class="btn btn-dark">Buy Now</button>
+      </div>
+      <div class="bag-col">
+        <img src="./bags/bag-3.png" alt="" class="card-img">
+        <h2 class="card-title">Dark Black</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sed quaerat deleniti qui tempore ex.</p>
+        <h1 class="bag-price">$ 99</h1>
+        <button class="btn btn-dark">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Shoes  end-->
+
+
+
+
+
+
+  <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
